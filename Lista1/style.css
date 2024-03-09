@@ -1,0 +1,62 @@
+*{
+    background-color:lavender;
+    background-color:lightgrey;
+    margin: 15px;
+}
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    text-align: center;
+}
+
+h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    text-align:left;
+}
+
+h4{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    text-align: left;
+}
+
+p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    text-align: justify;
+}
+
+.perguntas{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    text-align: justify;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+table, td, tr, th{
+    border-collapse: collapse;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin: auto;
+    padding: 10px;
+    font-weight: normal;
+}
+
+thead, th{
+    text-align: center;
+}
+
+.principal{
+    display: block;
+    width: 50%;
+}
+
+.foto{
+    width: 50%;
+    display: block;
+}
