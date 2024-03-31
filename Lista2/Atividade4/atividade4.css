@@ -1,0 +1,20 @@
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    animation: animacao 2s linear 0s infinite;
+}
+
+@keyframes animacao{
+    100%{
+        background-color:rgb(72, 61, 139);
+        border-radius: 0%;
+        width: 200px;
+        height: 200px;
+        color: white;
+    }
+}
