@@ -5,23 +5,23 @@ body{
 }
 
 *{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
-#tela{
+#barra, #menu, #estude, #campus, #noticias, #duvidas{
     padding-left: 10%;
     padding-right: 10%;
-    padding-top: 5%;
-    background-color: #EEF1EC;
 }
 
 #barra, #campus{
     display: grid;
     grid-template-columns: repeat(2, 50%);
+    background-color: #EEF1EC;
 }
 
 #barra{
-    margin-bottom: 10px;
+    padding-bottom: 3%;
+    padding-top: 5%;
 }
 
 #menu{
@@ -29,11 +29,14 @@ body{
     height: 50px;
     align-items: center;
     justify-content: space-between;
+    background-color: #EEF1EC;
+    padding-bottom: 2%;
 }
 
 a{
     color: rgb(97, 97, 97);
     font-size: 14px;
+    text-decoration: none;
 }
 
 #estudeOpcoes{
@@ -43,12 +46,14 @@ a{
 
 #noticias{
     display: grid;
-    grid-template-columns: 40% 20% 40%;
+    grid-template-columns: 40% 60%;
+    background-color: #EEF1EC;
 }
 
 #duvidas{
     display: grid;
     grid-template-columns: repeat(2, 50%);
+    padding-bottom: 70px;
 }
 
 #estudeDuvida{
@@ -66,8 +71,216 @@ a{
     width: 200px;
     height: 40px;
     justify-self: right;
-    border: 1px solid green;
+    border: 1px solid #83a7a5;;
     border-radius: 5px;
     background-color: #EEF1EC;
     margin-top: 30px;
+}
+
+#estude{
+    background-color: white;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+#destaque{
+    background-image: url('https://www.ifsc.edu.br/documents/d/noticias/portal-1');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 580px;
+    display: flex;
+    align-items: center;
+}
+
+#textoDestaque{
+    width: 55%;
+    padding-left: 10%;
+}
+
+#textoDestaque > h1{
+    color: black;
+    font-size: 48px;
+}
+
+h3{
+    color: black;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+#saiba{
+    width: 150px;
+    height: 43px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 10px 0px 0px;
+    padding: 11px 30.5px;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+h1{
+    color:#0f5f5c;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+p{
+    line-height: 24px;
+    color: #999;
+}
+
+.cursos{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-between;
+}
+
+.cursos > a{
+    color: green;
+}
+
+hr{
+    background-color: #999;
+}
+
+#campus{
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color: white;
+}
+
+#lista, #perguntaFrequente > input[type=button]{
+    background: #2f9e40;
+    border: 0;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    padding: 12px 32px;
+}
+
+#sobre{
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2f9e40;
+    padding: 12px 32px;
+    border: 1px solid #2f9e40;
+    background-color: white;
+}
+
+#noticia{
+    display: grid;
+    grid-template-areas: "header header"
+                         "main aside";
+    grid-template-columns: 40% 60%;
+}
+
+#noticia > h1{
+    grid-area: header;
+}
+
+#not{
+    grid-area: main;
+}
+
+#notDestaque{
+    grid-area: aside;
+    padding-left: 20px;
+    padding-bottom: 70px;
+}
+
+#notDestaque > h1{
+    color: #4A5057;
+    font-size: 35px;
+}
+
+.tipo{
+    display: inline;
+    color: #2f9e40;
+    font-size: 13px;
+
+}
+
+.data{
+    display: inline;
+    color: #999;
+    font-size: 12px;
+}
+
+#img{
+    background-image: url(https://www.ifsc.edu.br/image/journal/article?img_id=18102616&t=1712672863703);
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: 8px;
+    width: 240px;    
+}
+
+.bold{
+    color: #4A5057;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    text-decoration: none;
+}
+
+.not{
+    padding-bottom: 35px;
+}
+
+#maisNots{
+    text-decoration: none;
+    color: #2f9e40;
+    font-size: 16px;
+    font-weight:700;
+}
+
+#duvidas{
+    padding-top: 60px;
+}
+
+#estudeIfsc{
+    padding-right: 30px;
+}
+
+.estude{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+.estude > a{
+    color: #0f5f5c;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+
+.estude > img{
+    display: block;
+}
+
+.pergunta{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+
+.pergunta > a{
+    font-size: 16px;
+    font-weight: 300;
+    color: #4A5057;
+}
+
+.pergunta > .tipo{
+    font-size: 16px;
+    margin-bottom: 5px;
 }
