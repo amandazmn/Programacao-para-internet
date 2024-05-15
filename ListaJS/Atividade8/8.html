@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 8</title>
+</head>
+<body>
+    <h2>Insira um texto</h2>
+    <label for="txt">Texto: </label>
+    <input type="text" id="txt">
+    <br>
+    <br>
+    <button id="btn">Copiar texto</button>
+    <br>
+    <br>
+    <div id="textos">
+
+    </div>
+</body>
+<script>
+    let txt = document.querySelector("#txt");
+    let btn = document.querySelector("#btn");
+    let paragrafos = document.querySelector("#textos");
+
+    function copiarTexto(){
+        paragrafos.innerHTML = paragrafos.innerHTML + "<div>" + txt.value + "<div>";
+
+        txt.value = "";
+    }
+
+    btn.addEventListener('click', copiarTexto)
+
+</script>
+</html>

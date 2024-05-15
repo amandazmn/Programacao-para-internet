@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 7</title>
+</head>
+<body>
+    <h2>Insira dois números:</h2>
+    <label for="inputA">Número 1: </label>
+    <input type="text" name="" id="inputA">
+    <br>
+    <br>
+    <label for="inputB">Número 2: </label>
+    <input type="text" name="" id="inputB">
+    <br>
+    <br>
+    <button id="btn">Somar</button>
+    <br>
+    <br>
+    <div id="resultado"></div>
+</body>
+<script>
+    function somar(){
+        let a = Number(document.querySelector("#inputA").value);
+        let b = Number(document.querySelector("#inputB").value);
+
+        let resultado = a + b;
+
+        document.getElementById("resultado").innerHTML = resultado;
+        window.console.log(resultado);
+        window.alert(resultado);
+    }
+
+    document.getElementById("btn").addEventListener('click', somar);
+    
+</script>
+</html>

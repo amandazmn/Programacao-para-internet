@@ -1,0 +1,18 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+.box{
+    display: flex;
+    border: 1px solid black;
+    width: 20%;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}

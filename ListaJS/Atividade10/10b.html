@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Número Aleatório</title>
+</head>
+<body>
+    <label for="min">Mínimo: </label>
+    <input type="text" id="min">
+    <br>
+    <br>
+    <label for="max" id="">Máximo: </label>
+    <input type="text" id="max">
+    <br>
+    <br>
+    <button id="btn">Gerar Números Aleatórios</button>
+    <p id="result">Número aleatório: </p>
+    <p></p>
+</body>
+<script>
+    function gerarNumAleatorio(){
+        let min = Number(document.querySelector("#min").value);
+        let max = Number(document.querySelector("#max").value);
+
+        let num = Math.floor(Math.random() * max) + min;
+        document.getElementById("result").innerHTML = "Número aleatório: " + num;
+    }
+
+    let p = document.getElementById("btn");
+    p.addEventListener("click", gerarNumAleatorio);
+</script>
+</html>

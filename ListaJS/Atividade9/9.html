@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 9</title>
+</head>
+<body>
+    <button id="btn"> 0 </button>
+</body>
+<script>
+    let btn = document.querySelector("#btn");
+    let i = 0; 
+
+    function click(){
+        i++;
+
+        btn.innerHTML = i; 
+    }
+
+    btn.addEventListener('click', click);
+</script>
+</html>

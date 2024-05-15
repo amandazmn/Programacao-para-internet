@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Número Aleatório</title>
+</head>
+<body>
+    <button id="btn">Gerar Números Aleatórios</button>
+    <p id="result">Número aleatório: </p>
+    <p></p>
+</body>
+<script>
+    function gerarNumAleatorio(){
+
+        let num = Math.floor(Math.random() * 1000) + 0;
+        document.getElementById("result").innerHTML = "Número aleatório: " + num;
+    }
+
+    let p = document.getElementById("btn");
+    p.addEventListener("click", gerarNumAleatorio);
+</script>
+</html>

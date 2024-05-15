@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teclas</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #conteudo{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="tecla" id="conteudo"></div>
+</body>
+<script>
+    function tecla(){
+        var p = document.createElement("p");
+        p.innerText = event.key;
+        document.getElementById("conteudo").appendChild(p);
+    }
+
+    window.addEventListener('keydown', tecla);
+</script>
+</html>

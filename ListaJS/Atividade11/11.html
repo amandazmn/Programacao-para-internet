@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Cor</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">Alterar Cor de Fundo</button>
+</body>
+<script>
+    function gerarCor(){
+        return((Math.floor(Math.random()*255))).toString(16);
+    }
+
+    function alterarFundo(){
+        var color = "#"+gerarCor()+gerarCor()+gerarCor();
+        document.body.style.backgroundColor = color;
+    }
+
+    let p = document.getElementById("btn");
+    p.addEventListener("click", alterarFundo);
+</script>
+</html>
